@@ -4,7 +4,7 @@
 
 let palavras = ["asa", "ovo", "banana", "pão", "amor", "carro", "ababa"];
 
-function SePalindromo (palavras) {
+function SePalindromo(palavras) {
     //Verifica Letra por Letra
     var totalDeLetras = palavras.length;
     var letrasAconferir = Math.floor (totalDeLetras / 2);
@@ -13,10 +13,9 @@ function SePalindromo (palavras) {
         var indice = i;
         var compararIndice = totalDeLetras - 1 - indice;
         var compararLetras = palavras[compararIndice];
-        if (letras =! compararLetras) {
+        if (letras =! compararLetras){
             return false;
         }
-        console.log(i);
     }
 
     return true;
@@ -24,8 +23,8 @@ function SePalindromo (palavras) {
 
     palavras.forEach((palavras, ind) => {
         if (SePalindromo(palavras)) {
-            console.log("A Palavra ", palavras, "é Palíndrono");
+            console.log("A Palavra", palavras, "é Palíndrono");
         } else {
-            console.log("A Palavra ", palavras, "não é Palíndrono");
+            console.log("A Palavra", palavras, "não é Palíndrono");
         }
     })

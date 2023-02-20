@@ -23,14 +23,10 @@ cpf = “461.636.517-23” */
 
 function validarCPF(cpf) {
     const validar = cpf.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
-    if (cpf === validar){
-        console.log("A máscara está correta")
-    } else {
-    console.log("A máscara está incorreta")
-    }
+    return validar;
 }
 
-validarCPF("034.442.095-76");
+console.log(validarCPF("46163651723")); 
 
 /* TESTE 1.3 - O fatorial de um número n!, é definido como o produto de todos os números inteiros de 1
 a n. Por exemplo: 5! é 5 * 4 * 3 * 2 * 1 = 120

@@ -8,13 +8,13 @@ function palindromo(text){
         .join('');
 
         if ( sePalindormo === text){
-            console.log(text + " é Palindromo");
+            console.log(text + " é Palíndromo");
         } else {
-            console.log(text + " não é Palindromo");
+            console.log(text + " não é Palíndromo");
         }
 }
 
-palindromo("asa");
+palindromo("amor a roma");
 
 /* TESTE 1.2 - Faça uma função que receba uma string contendo um CPF e verifique se ele está
 formatado de acordo com a máscara 999.999.999-99. A função deve usar regex para fazer

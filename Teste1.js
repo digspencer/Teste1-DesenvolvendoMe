@@ -7,9 +7,9 @@ function palindromo(text){
         .reverse()
         .join('');
 
-        if ( sePalindormo === text){
+        if(sePalindormo === text){
             console.log(text + " é Palíndromo");
-        } else {
+        }else{
             console.log(text + " não é Palíndromo");
         }
 }
@@ -39,3 +39,14 @@ Regras
 ● n < 0 deve retornar nil
 ● n = 0 deve retornar 1
 ● n > 0 deve retornar n! */
+
+function Fatorar(){
+    let n1 = 2000;
+    while (n1<=0) {
+        n1 * (n1 - 1)
+        console.log(n1)
+        n1--;
+    }
+}
+
+Fatorar(200)

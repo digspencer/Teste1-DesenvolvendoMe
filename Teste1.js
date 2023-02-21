@@ -40,13 +40,18 @@ Regras
 ● n = 0 deve retornar 1
 ● n > 0 deve retornar n! */
 
-function Fatorar(){
-    let n1 = 2000;
-    while (n1<=0) {
-        n1 * (n1 - 1)
-        console.log(n1)
-        n1--;
+function Fatorar(num){
+    let soma = 1;
+    if(num>0){
+        while(num>0){
+            soma = soma * num;
+            console.log(num);
+            num--;
+        }
+        return console.log(soma);
+    } else {
+        console.log("Digite um número inteiro e maior que do 0!")
     }
 }
 
-Fatorar(200)
+Fatorar(5);
